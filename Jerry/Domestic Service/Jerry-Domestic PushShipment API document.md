@@ -33,11 +33,11 @@
 >
 *	**ECI product, which is AU POST international service. All info will be transfer to AUPOST**
 >
-*	**EParcel label will be about 100mm*150mm**
+*	**EParcel label will be about 100mm&times;150mm**
 >
 *	**ECI label will be of A4 size.**
 >
-*	**LARGE LETTERl will be about 100mm*90mm, DOMESTIC EWl will be about 100mm*150mm**
+*	**LARGE LETTERl will be about 100mm&times;90mm, DOMESTIC EWl will be about 100mm&times;150mm**
 >
 *	**EParcel label is generate in JERRY system, so there will be no time gap between lodging shipment and print label.**
 >
