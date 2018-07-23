@@ -1,4 +1,4 @@
-##Jerry-本地派送 推送订单API文档 
+## Jerry-本地派送 推送订单API文档 
 
 [TOC]
 
@@ -17,7 +17,7 @@
 |V 2.8      |	21/03/2018 |	Liang Huang     |	增加单品长宽高|
 |V 2.9      |	23/04/2018 |	Liang Huang	    |   修改TNT文案为Freight Service|
 |V 3.0      |	18/07/2018 |	Liang Huang	    |   增加错误码|
-|V 3.1      |	18/07/2018 |	Liang Huang	    |   文档改为md格式|
+|V 3.1      |	23/07/2018 |	Liang Huang	    |   文档改为md格式|
 
 
 
@@ -130,9 +130,9 @@
 |width|	Double|	否	|包裹宽|
 |height|	Double|	否|包裹高|	
 |weight|	Double|	是|	申报重量,重量上限详细见附表1|
-|allow_partial_delivery	|Boolean	否|	可不填，不填以客户默认为准|
-|authority_to_leave|	Boolean	|否	可不填，不填以客户默认为准|
-|safe_drop_enabled|	Boolean	否|	可不填，不填以客户默认为准|
+|allow_partial_delivery	|Boolean|否|	可不填，不填以客户默认为准|
+|authority_to_leave|	Boolean|否|可不填，不填以客户默认为准|
+|safe_drop_enabled|	Boolean|否|	可不填，不填以客户默认为准|
 |useStock|	Integer	|否|	使用库存填1不使用库存不填，或者填0|
 |merchandise|	Array[merchandise]|	使用库存必填，使用ECI必填不然非必填|见后|
 
