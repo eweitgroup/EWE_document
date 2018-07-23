@@ -128,8 +128,8 @@
 
 - **Merchandise**
 **Basic information about stock control:**
-*	Barcode: The product barcode，one item for one barcode，Note: for one product the old version the new version will have two different barcode.
-*	Sku: That’s why Jerry use sku to organize all the products，so that the different version of products will count as one product.
+*	barcode: The product barcode，one item for one barcode，Note: for one product the old version the new version will have two different barcode.
+*	sku: That’s why Jerry use sku to organize all the products，so that the different version of products will count as one product.
 *	goodsName: the product name Basic info when using ECI:
 *   Product Type，except EPARCEL and EXPRESS, the rest are international, product the 
 

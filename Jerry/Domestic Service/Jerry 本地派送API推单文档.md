@@ -138,8 +138,8 @@
 
 - **Merchandise**
 **使用库存须知：**
-*	Barcode:商品货物的条码，每一种商品一个barcode，注意，即使同一种产品，新旧包装，其中barcode也是不同的。
-*	Sku:管理商品的维度，Jerry用sku管理货物，这样，换了barcode的物品就是同一种物品。
+*	barcode:商品货物的条码，每一种商品一个barcode，注意，即使同一种产品，新旧包装，其中barcode也是不同的。
+*	sku:管理商品的维度，Jerry用sku管理货物，这样，换了barcode的物品就是同一种物品。
 *	goodsName:商品名字
 >
 | 字段      |     类型  |   是否必须   | 说明 |
