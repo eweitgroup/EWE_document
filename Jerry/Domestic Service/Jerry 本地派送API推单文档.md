@@ -17,6 +17,7 @@
 |V 2.8      |	21/03/2018 |	Liang Huang     |	增加单品长宽高|
 |V 2.9      |	23/04/2018 |	Liang Huang	    |   修改TNT文案为Freight Service|
 |V 3.0      |	18/07/2018 |	Liang Huang	    |   增加错误码|
+|V 3.1      |	18/07/2018 |	Liang Huang	    |   文档改为md格式|
 
 
 
@@ -37,7 +38,7 @@
 >
 *	**而ECI的产品面单为A4纸张大小**
 >
-*	**LARGE LETTER产品面单为100mm*90mm, DOMESTIC EWE面单大小为100mm*150mm**
+*	**LARGE LETTER产品面单为100mm&times;90mm, DOMESTIC EWE面单大小为100mm&times;150mm**
 >
 *	**EParcel的面单打印在Jerry系统中生成，所以没有时间延迟**
 >
@@ -72,7 +73,7 @@
 | digest  |  String    |  是     |签名算法见后|
 | shipments  | array[shipments]    |  是     |见后|
 | msgType  |  String    |  是     |为 pushUnCreatedShipments|
-| version  |  String    |  否     |可填 3.0 |
+| version  |  String    |  否     |可填 3.1 |
 
 - **Shipments**
 >
@@ -109,7 +110,7 @@
 |postcode	| String	        | 是	| 邮编,会对邮编和州和地区进行校验 |
 |phone	    | String	        | 否	| 澳洲电话标准 10-20长度，允许字符0123456789 -+() |
 |email	    | String	        | 否	| 符合邮箱标准     |
-|country	| String	        | 是	| EPARCEL填写AU对于ECI用户，填写相应的country code，country code 符合ISO 3166-1 alpha-2 standard.|
+|country	| String	        | 是	| EPARCEL填写AU对于ECI用户，填写相应的country code，country code 符合[ISO 3166-1 alpha-2 standard](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 
 
 - **Items**
@@ -118,7 +119,7 @@
 ##### 使用Freight Service须知
 *	<font face="宋体" size=3>一定使用jerry库存，</font>
 *	<font face="宋体" size=3>订单全部信息要为英文，除了库存信息之外；</font>
-*	<font face="宋体" size=3>重量最大限制为100KG（这个100KG是计费重量，以计费重量为标准，计费重量是以实际重量和体积重量  相比，取其大者；体积重Cubic weight = length(m)*width(m)*height(m) X 250；</font>
+*	<font face="宋体" size=3>重量最大限制为100KG（这个100KG是计费重量，以计费重量为标准，计费重量是以实际重量和体积重量  相比，取其大者；体积重Cubic weight = length(m)&times;width(m)&times;height(m)&times;250；</font>
 *	<font face="宋体" size=3>包裹的单边长尺寸最大的不能超5m</font>
 >
 | 字段      |     类型  |   是否必须   | 说明 |
@@ -294,7 +295,7 @@ Password由EWE提供，示例json也有示范
 ```
 
 ### 附表1
-####注:
+#### 注:
 * **绿色为EParcel产品，即澳洲邮政的本地件。**
 * **黄色产品为ECI产品，即澳洲邮政的国际件，产品信息全程由澳洲邮政提供。**
 * **蓝色为Freight Service产品，即大宗货物，详细信息联系JERRY销售**

@@ -1,4 +1,4 @@
-##Jerry-LocalDispatch PushShipment API document
+## Jerry-Domestic PushShipment API document
 
 [TOC]
 
@@ -16,8 +16,8 @@
 |V 2.7      |	13/03/2018 |	Liang Huang     |	Add product Domestic EWE|
 |V 2.8      |	21/03/2018 |	Liang Huang     |Add Single item length , width ,height|
 |V 2.9      |	23/04/2018 |	Liang Huang	    |  Modify the TNT name to be Freight Service|
-|V 3.0      |	18/07/2018 |	Liang Huang	    |  Increase return code|
-
+|V 3.0      |	18/07/2018 |	Liang Huang	    | Error message code added|
+|V 3.1      |	23/07/2018 |	Liang Huang	    | xlsx document to markdown|
 
 
 ---
@@ -106,7 +106,7 @@
 |postcode	| String	        | Mandatory	| There will be a validation of these area |
 |phone	    | String	        | Optional	|The phone number must be between 10 and 20 characters in length and the allowable characters are "()- 0-9" (digits, space, hyphen and parentheses.) Examples are 0491-570-156, 02) 5550 1234, +61 (3) 7010 4321. |
 |email	    | String	        | Optional	| Receiver email address     |
-|country	| String	        | Mandatory	| For EPARCEL. Please set AU<br/>For ECI, The country code for the address. The country code must conform to ISO 3166-1 alpha-2 standard.|
+|country	| String	        | Mandatory	| For EPARCEL. Please set AU<br/>For ECI, The country code for the address. The country code must conform to [ISO 3166-1 alpha-2 standard](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 
 
 - **Items**
@@ -215,7 +215,7 @@ EWE will provide the key and the test is shown in the example below.
 ### JSON
 >    
 * **The request example**
-```java 
+```json 
 //API密码为123456
 //示例JSON
 {
@@ -263,7 +263,7 @@ EWE will provide the key and the test is shown in the example below.
 ```
 * **The response example**
 
-```java
+```json
 {
     "shipments": [
         {
@@ -286,7 +286,7 @@ EWE will provide the key and the test is shown in the example below.
 ```
 
 ### Appendix 1
-####Note:
+#### Note:
 * **The green is EParcel product, which is AU POST domestic service.**
 * **The yellow is ECI product, which is AU POST international service. All info will be transfer to AU POST**
 * **The blue is Freight Service product**
@@ -308,7 +308,7 @@ EWE will provide the key and the test is shown in the example below.
 |<font  color=#FF4500>999996</font>	|<font  color=#FF4500>DOMESTIC EWE	</font>|No	|∞|
 
 ### Appendix 2
-####API return code
+#### API return code
 |  Code      |     Error Description  | 
 | :-------- | :--------|
 |0	|Success|
