@@ -1,2 +1,2 @@
-# EWE_document_API
+# EWE_document
 Document for EWE
