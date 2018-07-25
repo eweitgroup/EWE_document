@@ -1,4 +1,4 @@
-## Jerry-Domestic PushShipment API
+## Jerry-Domestic Create Shipment API
 
 [TOC]
 
@@ -216,8 +216,6 @@ EWE will provide the key and the test is shown in the example below.
 >    
 * **The request example**
 ```json 
-//API密码为123456
-//示例JSON
 {
 	"username":"test",
 	"digest":"Hf+Gw8Yl5KPtn047o9yzwQ==",
