@@ -1,4 +1,4 @@
-## Jerry-Domestic PushShipment API document
+## Jerry-Domestic PushShipment API
 
 [TOC]
 
@@ -184,7 +184,7 @@
 
 
 ### Digest algorithm
-he algorithm is MD5 + base64 algorithm, for string 123456, 
+The digest algorithm is MD5 + base64 algorithm, for string 123456, 
 the digest will be Hf+Gw8Yl5KPtn047o9yzwQ==
 example:
 digest  = test + 1 + pushUnCreatedShipments + 123456

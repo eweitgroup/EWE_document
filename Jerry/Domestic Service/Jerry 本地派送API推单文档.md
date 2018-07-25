@@ -36,7 +36,7 @@
 >
 *	**EParcel产品面单为100mm&times;150mm大小的面单。**
 >
-*	**而ECI的产品面单为A4纸张大小**
+*	**ECI的产品面单为A4纸张大小**
 >
 *	**LARGE LETTER产品面单为100mm&times;90mm, DOMESTIC EWE面单大小为100mm&times;150mm**
 >
